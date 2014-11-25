@@ -6,4 +6,4 @@ from nxt.motor import *
 b = nxt.locator.find_one_brick()
 
 m_left = Motor(b, PORT_C)
-m_left.turn(50, 25) # power, degrees
+m_left.turn(-100, 25) # power, degrees
