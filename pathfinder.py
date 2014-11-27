@@ -15,11 +15,21 @@ global arm_motor
 global rgb_sensor
 global brick
 
+def calibrate():
+  #Press button
+  #get min
+  #Press button
+  #get max
+  #Press button
+  #RUN
+  true
+
 def setup():
   global left_light, right_light, left_calibrate, right_calibrate, left_motor, right_motor, rgb_sensor, arm_motor
   #rgb_sensor = Color20(brick, PORT_1)
   right_light = Light(brick, PORT_2)
   left_light = Light(brick, PORT_3)
+  #left_light.reset_input_scaled_value()
   left_light.set_illuminated(True)
   right_light.set_illuminated(True)
   left_motor = Motor(brick, PORT_B)
